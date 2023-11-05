@@ -1,0 +1,136 @@
+
+/*!! prof problema se visualizzo la pagina con live server si vede tutto bene
+     se la apro normalmente invece alcune misure (tipo le 4 immagini nel div) non mi corrispondono*/
+
+body {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #E9EDEE;
+}
+
+.bg-dark {
+    background-color: #222F3F;
+    padding: 0;
+}
+
+.bg-light {
+    background-color: #364659;
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+}
+
+.blue-link {
+    text-decoration: none;
+    color: #1a829c;           /* preso piu volte il colore con colorzilla ma personalmente sembra diverso da quello mostrato nel mock up */
+    font-weight: bold;
+    font-size: 0.7em;
+}
+
+.text-center {
+    text-align: center;
+}
+/*************************************HEADER*************************************/
+
+#logo {
+    height: 1.8em;
+    padding: 0.2em;
+    margin: 0.3em 0 0 1em;
+}
+
+ol {
+    margin: 0;
+    padding-left: 1em;
+    list-style-type: none;
+}
+
+li {
+    display: inline;
+    font-size: 0.7em;
+    padding: 0.4rem;
+}
+
+/*************************************MAIN*************************************/
+
+main {padding: 20px;}
+
+main > p:first-child {
+    background-color: #F56600;
+    padding: 3px;
+    font-size: 0.7em;
+    margin: 0 0 20px 0;
+}
+
+section {
+    background-image: url(../images/bg-image.png);
+    background-size: contain;
+    background-repeat: repeat;
+    padding: 2.5em 0 1.5em 0;
+    font-weight: bold;
+    font-size: smaller;
+    height: 100px;
+}
+
+#shop-now {
+    background-color: white;
+    margin-top: 20px;
+    padding: 5px 0px 0 15px;
+
+}
+#shop-now p, a {
+    display: inline;
+    font-size: 0.8em;
+}
+
+#shop-now-imgs {
+    display: inline-block;
+    min-height: 315px;
+    max-height: 350px;
+}
+
+
+#shop-now-imgs img {                      /* con queste regole in 1080 si vede perfettamente non ho voluto utilizzare flex solo perche' non l'abbiamo fatto a lezione*/
+    width: 240px; 
+    height: 300px; 
+    object-fit: cover; 
+    border-radius: 10px;
+    margin: 0.65em;
+    box-shadow: 5px 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////*/
+
+figure {margin: 0;}
+
+figcaption {font-size: 0.8em;}
+
+figure img {
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+    margin-bottom: -10px;         /* utilizzo negativo per avvicinare la figcaption all'img contenuta dentro figure come nel mockup */
+}
+
+/*************************************FOOTER*************************************/
+
+footer p {
+    margin: 0;
+    text-decoration: underline;
+    text-decoration-color: white;
+    font-size: 0.5em;
+    font-weight: bold;
+    padding: 5px;
+}
+
+footer div {
+    text-align: center;
+}
+
+footer div img {
+    height: 40px;
+    padding: 2em;
+}
